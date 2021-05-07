@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap");
+
+/* FUENTES IMPORTADAS 
+
+font-family: 'Oxygen', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+
+*/
+
+/* Toda la página */
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #292929;
+}
+
+main {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Texto de cabecera */
+
+#tagline h1 {
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  color: #3eb07b;
+}
+#tagline h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #22704e;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.quote {
+  font-size: 25px;
+  font-style: italic;
+  color: #22704e;
+}
+
+/* Menú de navegación */
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+nav {
+  display: flex;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+nav ul a {
+  display: flex;
+  text-decoration: none;
+  color: #5f5f5f;
+}
+#actual {
+  color: #3eb07b;
+}
+nav ul a:hover {
+  color: #22704e;
+}
+
+/* Disposición cards */
+
+#resultadoComidas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#favoritos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#resultadoIngredientes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h4 {
+  font-family: "Oxygen", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #22704e;
+}
+
+/* Efectos card */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 1%;
+  background-color: #bfffb2;
+}
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #22704e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 16px;
+}
+
+/* input */
+
+input {
+  width: 250px;
+  padding: 1%;
+  font-size: 15px;
+  background-color: #bfffb2;
+  border: none;
+}
+
+/* botones */
+
+button {
+  width: 250px;
+  padding: 1%;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #bfffb2;
+}
+button:hover {
+  color: #fff;
+  background-color: #3eb07b;
+}
+#fav {
+  width: 50px;
+  padding: 3%;
+  border: none;
+  background-color: transparent;
+  border-radius: 25px;
+}
+#fav:hover {
+  padding: 3%;
+  background-color: #fff;
+}
+
+/* select */
+
+select {
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+  width: 40%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  border: 1px;
+  border-color: #22704e;
+  border-radius: 0;
+  background: #f0f0f0;
+  transition: all 0.25s ease;
+}
+
+/* Footer */
+
+footer {
+  background-color: lightgray;
+}
+#contenedorFooter {
+  display: flex;
+  grid-template-columns: repeat(3);
+  column-gap: 5px;
+  margin: 2% 5% 2% 5%;
+}
+.contactoFooter {
+  width: 35%;
+}
+#copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+}
+
+/* Sección inicio */
+
+#contenedorInicio {
+  text-align: center;
+  padding: 80px;
+  background-image: url(img/contenedorInicio.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: brightness(0.9);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contenedorInicio h2 {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 80px;
+  color: #22704e;
+}
+#contenedorInicio h2:hover {
+  font-weight: 600;
+}
+/* Sección servicios */
+
+#contenedorServicios {
+  padding: 3% 0% 3% 0%;
+  display: flex;
+  justify-content: space-around;
+  grid-template-columns: fit-content(200px) fit-content(200px) 1fr;
+}
+.servicios {
+  width: 30%;
+  margin: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-color: #bfffb2;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+}
+.servicios h3 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-indent: 3px;
+}
+.servicios p {
+  font-size: 18px;
+}
+/* Sección contenido */
+
+#contenido {
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Open Sans", sans-serif;
+}
+#contenido p {
+  font-size: 18px;
+}
+/* Sección equipo */
+
+#contenedorEquipo {
+  margin: 5% 5% 5% 5%;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: fit-content(200px) fit-content(200px) 1fr;
+}
+
+#contenedorEquipo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+#contenedorEquipo img:hover {
+  transform: scale(1.1);
+}
+
+/*/// MEDIA QUERIES  ///*/
+
+@media (max-width: 600px) {
+  #resultadoComidas {
+    width: 100%;
+  }
+  #resultadoIngredientes {
+    display: block;
+    width: 100%;
+  }
+  #contenedorEquipo {
+    display: block;
+    width: 100%;
+  }
+  #contenedorServicios {
+    display: block;
+    width: 100%;
+  }
+  #contenido p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  .card {
+    width: 100%;
+  }
+  input {
+    width: 90%;
+  }
+  .servicios {
+    width: 100%;
+  }
+
+  #contenedorFooter {
+    display: block;
+    margin: 2% 5% 2% 5%;
+  }
+  .contactoFooter {
+    width: 100%;
+  }
+  #copyright {
+    display: block;
+  }
+  button {
+    width: 90%;
+    margin: 1%;
+  }
+}
